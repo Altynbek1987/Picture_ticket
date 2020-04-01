@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/LHR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="100dp"
+        android:text="LHR"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@id/Name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/JFK"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/samalet"
+        app:layout_constraintBottom_toBottomOf="@id/Name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/London"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LONDON"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/LHR"
+        app:layout_constraintLeft_toLeftOf="@id/LHR"
+        app:layout_constraintRight_toRightOf="@id/LHR"/>
+
+    <TextView
+        android:id="@+id/JFK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JFK"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@id/Name"
+        app:layout_constraintLeft_toRightOf="@id/LHR"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/New_York"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEW YORK"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/JFK"
+        app:layout_constraintLeft_toLeftOf="@id/JFK"
+        app:layout_constraintRight_toRightOf="@id/JFK"/>
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="___________"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/line1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NAME"
+        android:textSize="15sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/Arrives"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/Jamie_Syke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jamie Syke"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/Name"
+        app:layout_constraintLeft_toLeftOf="@id/Name"
+        app:layout_constraintRight_toRightOf="@id/Name" />
+
+    <TextView
+        android:id="@+id/Flight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FLIGHT"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/Seat"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/VA301"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VA301"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/Flight"
+        app:layout_constraintLeft_toLeftOf="@id/Flight"
+        app:layout_constraintRight_toRightOf="@id/Flight"/>
+
+    <TextView
+        android:id="@+id/Seat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEAT"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/Flight"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/A21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="21A"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/Seat"
+        app:layout_constraintLeft_toLeftOf="@id/Seat"
+        app:layout_constraintRight_toRightOf="@id/Seat"/>
+
+    <TextView
+        android:id="@+id/line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="___________"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@id/line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/Departs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DEPARTS"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/Arrives"
+        app:layout_constraintTop_toTopOf="@id/Flight" />
+
+    <TextView
+        android:id="@+id/Time_15_40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15:40"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/Departs"
+        app:layout_constraintLeft_toLeftOf="@id/Departs"
+        app:layout_constraintRight_toRightOf="@id/Departs"/>
+
+    <TextView
+        android:id="@+id/Arrives"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ARRIVES"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/Departs"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Seat" />
+
+    <TextView
+        android:id="@+id/Time_19_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="19:01"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/Arrives"
+        app:layout_constraintLeft_toLeftOf="@id/Arrives"
+        app:layout_constraintRight_toRightOf="@id/Arrives"/>
+    <TextView
+        android:id="@+id/line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="---------------------------------------------------------------------"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line1"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:src="@drawable/shtrihkod"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Time_19_01"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/September"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:text="               22 nd  SEPTEMBER  2016"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+
+
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
